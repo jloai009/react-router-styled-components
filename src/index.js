@@ -26,6 +26,22 @@ const Input = styled.input`
   margin: 0.25em;
 `
 
+const Page = styled.div`
+  padding: 1em;
+  background: papayawhip;
+`
+
+const Navigation = styled.div`
+  background: BurlyWood;
+  padding: 1em
+`
+
+const Footer = styled.div`
+  background: Chocolate;
+  padding: 1em;
+  margin-top: 1em;
+`
+
 const Home = () => (
   <div> 
     <h2>TKTL notes app</h2> 

@@ -146,8 +146,8 @@ const App = () => {
     : null
 
   return (
-    <div>
-      <div>
+    <Page>
+      <Navigation>
         <Link style={padding} to="/">home</Link>
         <Link style={padding} to="/notes">notes</Link>
         <Link style={padding} to="/users">users</Link>
@@ -155,7 +155,7 @@ const App = () => {
           ? <em>{user} logged in</em>
           : <Link style={padding} to="/login">login</Link>
         }
-      </div>
+      </Navigation>
 
       <Switch>
         <Route path="/notes/:id">
@@ -174,11 +174,10 @@ const App = () => {
           <Home />
         </Route>
       </Switch>
-      <div>
-        <br />
+      <Footer>
         <em>Note app, Department of Computer Science 2021</em>
-      </div>
-    </div>
+      </Footer>
+    </Page>
   )
 }
 
